@@ -90,3 +90,11 @@ function promptUser() {
         },
     ]);
 }
+
+// Function to write the generated README content
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (error) => 
+    err ? console.error(err) : console.log('README.md file generated successfully!')
+    );
+}
+
