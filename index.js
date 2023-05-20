@@ -97,4 +97,15 @@ function writeToFile(fileName, data) {
     err ? console.error(err) : console.log('README.md file generated successfully!')
     );
 }
+// Function to initialize the application
+function init() {
+    promptUser()
+        .then ((answers) => {
+            const readmeContent = generateREADME(answers);
+            writeToFile('README.md', readmeContent);
+        })
+        .catch ((err) => console.error(err));
+}
 
+// Initialize the application
+init();
