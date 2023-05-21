@@ -18,7 +18,7 @@ ${answwers.description}
 - [Questions](#questions)
 
 ## Installation
-${answwers.installatiom}
+${answwers.installation}
 
 ## Usuage
 ${answwers.usuage}
@@ -93,9 +93,15 @@ function promptUser() {
 
 // Function to write the generated README content
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (error) => 
-    err ? console.error(err) : console.log('README.md file generated successfully!')
-    );
+    fs.writeFile(fileName, data, function(err) {
+        console.log(fileName) 
+        console.log(data)
+        if (err) {
+            return console.log(err)
+        } else {
+            console.log('README.md file generated successfully!')
+        }
+    })
 }
 // Function to initialize the application
 function init() {
@@ -109,3 +115,6 @@ function init() {
 
 // Initialize the application
 init();
+
+
+  
