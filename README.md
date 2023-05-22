@@ -25,6 +25,9 @@ To use the Profession README Generator, follow these steps:
 3. Answer the prompts and provide the requested information abput the project. 
 4. The README.md file will be generated once you have provided all necessary informaion.
 
+    - Walkthrough Link: https://drive.google.com/file/d/1awrfy3Zw7RAgC0U_0MZnmuoAU-Pq5JKN/view
+    - Screenshot: ![Alt text](./assets/images/Screenshot%202023-05-21%20at%201.41.18%20AM.png)
+
 ## License
 This application is covered under Test license.
 
